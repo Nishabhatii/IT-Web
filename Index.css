@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar{
+color: aquamarine;
+background-color: brown;
+display: flex;
+justify-content: space-between;
+padding: 0 40px;
+height: 13vh;
+align-items:  center;
+}
+.logo{
+
+}
+.list{
+display: flex;
+gap: 45px;
+
+}
+.list li{
+list-style: none;
+
+}
+.lisi ul a{
+color: aqua;
+}
+span{
+    color: rgb(98, 31, 221);
+}
+.intro{
+    background-image: url(images/slider/1.jpg);
+}
+.newsletter{
+    background-image: url(images/newsletter-bg.jpg);
+    height: 100vh;
+    width: 220vh;
+}
+#Pricing h2{
+    display: flex;
+    align-self: center;
+}
+#Contact{
+    background-image: url(images/contact-bg.jpg);
+   height: 30vh;
+   width: 200vw;
+   color: blueviolet;
+}
+.info{
+    display: flex;
+   align-items: center;
+   gap: 5rem;
+}
+.Contact .message{
+    display: block;
+}
+footer{
+    background-color: blueviolet;
+
+}
+.social-media{
+    display: flex;
+    align-content: flex-end;
+}
