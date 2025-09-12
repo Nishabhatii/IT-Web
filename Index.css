@@ -4,64 +4,243 @@
     box-sizing: border-box;
     
 }
+:root{
+    --main-color:#777777;
+    --second-color:#93CA3A;
+}
+span{
+    color: var(--second-color)}
 .navbar{
-color: aquamarine;
-background-color: brown;
+color: var(--second-color);
+background-color: rgb(253, 252, 252);
 display: flex;
 justify-content: space-between;
 padding: 0 40px;
 height: 13vh;
 align-items:  center;
 }
-.logo{
 
-}
 .list{
 display: flex;
 gap: 45px;
+color: var(--second-color)
 
 }
 .list li{
 list-style: none;
 
 }
-.lisi ul a{
-color: aqua;
+.list li a{
+color: #777777;
+text-decoration: none;
+font-size: 1.2rem;
+font-weight: 500;
 }
-span{
-    color: rgb(98, 31, 221);
+.list li a:hover{
+color: #93CA3A;
+cursor: pointer;
 }
+.homedata{
+width: 100%;
+display: flex;
+gap: 30px;
+justify-content: center;
+padding: 40px;
+}
+.homedata1 , .homedata2{
+   display: flex;
+   width: 640px;
+   justify-items: flex-start;
+}
+.card {
+    height: 120px;
+   
+    gap: 15px;
+}
+.card h3{
+    text-decoration: underline;
+    padding-bottom: 1px;
+}
+
 .intro{
     background-image: url(images/slider/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow-x: hidden;
 }
 .newsletter{
     background-image: url(images/newsletter-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
-    width: 220vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+#pricing{
+    display: flex;
 }
 #Pricing h2{
     display: flex;
-    align-self: center;
+    
+   
+}.Basic{
+    display: block;
+    align-items: flex-start;
+   
 }
+.Basic li{
+    list-style: none;
+   
+}
+.Basic ul ,.Basic  button,#Pricing h2{
+   padding: 6px;
+   margin: 22px;
+}
+.Basic  button{
+   background-color: #93CA3A;
+   color: white;
+   font-size: small;
+   border-radius: 4px;
+   border: 0.3px solid #93CA3A;
+   align-content: center;
+}
+.Price{
+    display: flex;
+   gap: 139px;
+  padding: 20px;
+   justify-content: center;
+}
+.Basic:hover{
+    background-color: black;
+    color: aliceblue;
+
+}
+/* portfolio */
+
+#Portfolio{
+    width: 100%;
+}
+.Portfolio-btn{
+display: flex;
+border: none;
+}
+.img{
+    
+}
+.img img{
+    width: 350px;
+    height: 260px;
+    margin: 10px 10px;
+}
+
+/* contact */
+
 #Contact{
     background-image: url(images/contact-bg.jpg);
-   height: 30vh;
-   width: 200vw;
-   color: blueviolet;
-}
-.info{
-    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   height: 90vh;
+   width: 100%;
+   color: rgb(255, 255, 255);
+   display: flex;
    align-items: center;
-   gap: 5rem;
+   padding: 0 40px;
+   overflow-x: hidden;
+   justify-content: space-around
 }
-.Contact .message{
+.Contact-first{
+width: 22vw
+}
+.Contact-first h2{
+padding-bottom: 9px;
+padding-left: 9px;
+font-size: 32px;
+}
+.first{
     display: block;
+    
 }
+.first a{
+    color: #93CA3A !important;
+    padding-top: 40px !important;
+    justify-content: center !important;
+   size: 1rem;
+   
+}
+.social-media{
+    padding-left: 1rem;
+   
+}
+.second h2{
+    padding-bottom: 2rem;
+padding-left: 9px;
+font-size: 32px;
+}
+.second1{
+display: flex;
+gap: 17px;
+}
+.second1 a{
+    color: #93CA3A;
+}
+.input1{ 
+    padding: 12px !important;
+    margin: 10px 10px 10px 0 !important;
+    width: 100%;
+}
+.input2{ padding: 12px !important;
+    margin: 10px 0 10px 0 !important;
+    width: 100%;}
+.second1 p{
+    padding-bottom: 2rem;
+}
+.third{
+    display: block;
+    margin: 20px;
+
+}
+.data{
+    display: flex;
+  gap: 15px;
+}
+.info-button{
+   width: 100% !important;
+   text-align: right !important
+    
+}
+/* footer */
 footer{
-    background-color: blueviolet;
+    background-color: rgb(245, 243, 248);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    height: 88px;
 
 }
 .social-media{
     display: flex;
     align-content: flex-end;
+    gap: 45px;
+    text-decoration: none;
+   
+    padding-right: 140px;
+}
+.social-media a{
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+   
+}
+.Copyright p{
+    padding-bottom: 10px;
+    font-weight: 160;
+}
+.Copyright h3{
+    
+    font-weight: 110;
+    font-size: 1rem;
 }
