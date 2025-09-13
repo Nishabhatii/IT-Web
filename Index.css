@@ -116,11 +116,32 @@ padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 40px 20px;
+    gap: 30px;
 }
 
 .About1 {
    width: 100%;
+}
+
+.About1 h2 {
+   font-size: 40px;
+   padding-bottom: 20px;
+}
+
+.About1 p {
+   margin-top: 10px;
+   line-height: 1.5;
+}
+.marginTop{
+    margin-top: 50px;
+}
+progress{
+    width: 100%;
+    margin: 10px 0;
+    background-color:var(--second-color);
+    border-radius: 3px;
+    height: 6px;
 }
 .intro{
     background-image: url(images/slider/1.jpg);
@@ -149,7 +170,7 @@ color: #fdfbfb;}
    } 
    .newsletter-data input{
 margin: 20px 10px;
-padding: 10px 80px 10px 80px;
+padding: 10px 90px 10px 20px;
 background-color: transparent;
 color: white !important;
 border: 1px solid white;
@@ -169,6 +190,7 @@ border: none;
 /* }team */
 #Team h2{
     text-align: center;
+    justify-content: center;
     font-size: 2rem;
     margin: 14px;
 }
@@ -189,6 +211,7 @@ gap: 30px;
 .Team-img:hover{
 transition: 2ms;
 color: #000;
+
 }
 .Team-text{
     
@@ -197,7 +220,8 @@ color: #000;
 }
 .Team-member{
 margin-bottom: 70px;
-margin-left: 30px;
+overflow-x: hidden;
+width: 100%;
 }
 .Team-member h2{
 margin-bottom: 30px;
@@ -290,7 +314,7 @@ margin-bottom: 30px;
 }
 /* portfolio */
 #Portfolio{
-   
+   padding-top: 100px;
 }
 #Portfolio h2{
    text-align: center;
@@ -302,15 +326,16 @@ display: flex;
 border: none;
 justify-content: center;
 }
-.Portfolio-btn:hover{
-border: 0 0 10px #fdfdfd,
-}
+
 .Portfolio-btn button{
     padding: 10px 20px 10px 20px;
 margin: 10px 10px 10px 10px;
 border: 0.2px solid rgb(231, 229, 229);
 color:#777777;
 background-color: rgb(254, 255, 255);
+}
+.Portfolio-btn button:hover{
+border: 0 0 10px #fdfdfd,
 }
 .img{
     display: flex;
@@ -340,7 +365,8 @@ background-color: rgb(254, 255, 255);
    align-items: center;
    padding: 0 40px;
    overflow-x: hidden;
-   justify-content: space-around
+   justify-content: space-around;
+   margin-top: 100px;
 }
 .info{
 margin: 15px 17px ;
@@ -398,11 +424,32 @@ gap: 17px;
 }
 .data{
     display: flex;
-  gap: 15px;
+ 
+}
+.data input {
+    
+ margin: 0 19px 11px 2px;
+ padding: 14px;
+ border-radius: 4px ;
+ border: transparent;
+}
+.message{
+padding-left: 12px;
+border-radius: 4px ;
+ border: transparent;
 }
 .info-button{
    width: 100% !important;
-   text-align: right !important
+   text-align: right !important;
+    
+}
+
+.info-button button{
+  padding: 15px 40px;
+  margin-top: 10px;
+ border-radius: 4px ;
+ border: transparent;
+ margin-right: 21px;
     
 }
 /* footer */
