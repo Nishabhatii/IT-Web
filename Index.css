@@ -21,6 +21,7 @@ height: 13vh;
 align-items:  center;
 position: fixed;
 width: 100%;
+
 }
 #Service{
     background-image: url(images/divider-bg.jpg);
@@ -28,10 +29,26 @@ width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     color: aliceblue;
    padding: 100px 120px 140px 150px;
    font-size: 1.1rem;
+   
+}
+#Service h4{
+padding: 15px 0 30px 0;
+font-size: 1.5em;
+}
+#Service p{
+line-height: 1.8;
+width: 75%;
+
+}
+#Service h4 span {
+background-color: white;
+color: #000;
+margin-right: 4px;
+padding: 4.5px;
 }
 
 .list{
@@ -54,32 +71,56 @@ font-weight: 500;
 color: #93CA3A;
 cursor: pointer;
 }
+/* home */
+
 .homedata{
 width: 100%;
-display: flex;
+display: block;
 gap: 30px;
 justify-content: center;
-padding: 40px;
+padding: 40px 60px;
+padding-top: 120px;
+margin-bottom: 100px;
+
 }
-.homedata1 , .homedata2{
-   display: flex;
-   width: 640px;
-   justify-items: flex-start;
+.homedata1 {
+display: flex;
+gap: 30px;
+padding-top: 50px;
+
 }
+
 .card {
-    margin-top: 50px;
-    display: flex;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   gap: 1.4rem;
     
 }
-.card h3{
-    text-decoration: underline;
-    padding-bottom: 1px;
+.card-link a {
+  font-size: 3rem;
+  margin-left: 7px;
+    
+}
+.card-p h2{
+   
+    padding-bottom: 10px;
+}
+
+.card-p p{
+    padding-top: 10px;
+   border-top: 2px solid black;
+
 }
 #About{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+}
+
+.About1 {
+   width: 100%;
 }
 .intro{
     background-image: url(images/slider/1.jpg);
@@ -89,17 +130,51 @@ padding: 40px;
     width: 100%;
     overflow-x: hidden;
 }
+/* newleetter */
 .newsletter{
     background-image: url(images/newsletter-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 66vh;
     width: 100%;
-    overflow-x: hidden;}
+    overflow-x: hidden;
+align-content: center;
+padding-left: 26rem;
+color: #fdfbfb;}
+   .newsletter-h2{
+    margin-bottom: 2rem;
+    /* align-content: center; */
+    margin-right: 27rem !important;
+   } 
+   .newsletter-data input{
+margin: 20px 10px;
+padding: 10px 80px 10px 80px;
+background-color: transparent;
+color: white !important;
+border: 1px solid white;
+   }
+   
+   .newsletter-data button{
+margin: 20px 10px;
+padding: 10px 30px;
+background-color: #93CA3A;
+color: white;
+border: none;
+   }
+   .newsletter-data button:hover ,.newsletter-data input:hover {
+  box-shadow: 0 0 10px #fdfbfb;
+}
+
 /* }team */
+#Team h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 14px;
+}
 .Team-data{
     display: flex;
+    align-items: center;
 }
 .Team-img{
 display: flex;
@@ -110,46 +185,103 @@ width: 100%;
 height: 45vh;
 gap: 30px;
 }
+
+.Team-img:hover{
+transition: 2ms;
+color: #000;
+}
 .Team-text{
     
    text-align: center;
-   margin: 20px 0;
+   margin: 0 0;
 }
+.Team-member{
+margin-bottom: 70px;
+margin-left: 30px;
+}
+.Team-member h2{
+margin-bottom: 30px;
 
+}
+/* price */
 
 #pricing{
     display: flex;
 }
+.heading{
+    text-align: center;
+    margin: 70px 0 0px 0;
+    font-weight: 600 ;
+}
+
+.Price >div:nth-child(1){
+    margin-top: 4rem;
+}
+.Price >div:nth-child(2){
+    margin-top: 6rem;
+}
+.Price >div:nth-child(3){
+    margin-top: 3rem;
+}
+.Price >div:nth-child(4){
+    margin-top: 1rem;
+}
 #Pricing h2{
     display: flex;
-    
-   
+    margin-left: 50px;
+    padding: 6px;
+   margin: 22px;
 }.Basic{
     display: block;
     align-items: flex-start;
+    width: 100%;
+    border: 0.1px solid rgb(238, 236, 236);
+     text-align: center;
+}
+.Basic h2 span{
    
+    
+    width: 100%;
+   
+   text-align: center;
+ font-size: 30px;
+  
+  padding: 50px 0;
+  
+}
+.line{
+    height: 0.1px;
+    width: 75%;
+    padding-left: 20px;
+    margin-left: 40px;
 }
 .Basic li{
     list-style: none;
    
 }
-.Basic ul ,.Basic  button,#Pricing h2{
+.Basic li {
    padding: 6px;
    margin: 22px;
+   font-size: 1.0rem;
 }
 .Basic  button{
    background-color: #93CA3A;
    color: white;
-   font-size: small;
+   font-size: 0.75rem;
+   font-weight: 600;
    border-radius: 4px;
    border: 0.3px solid #93CA3A;
    align-content: center;
+   padding: 8px 36px;
+   margin-top: 12px;
+   margin-bottom: 12px;
 }
 .Price{
     display: flex;
-   gap: 139px;
+  
   padding: 20px;
    justify-content: center;
+  
 }
 .Basic:hover{
     background-color: black;
@@ -157,24 +289,41 @@ gap: 30px;
 
 }
 /* portfolio */
-
 #Portfolio{
    
+}
+#Portfolio h2{
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 30px;
 }
 .Portfolio-btn{
 display: flex;
 border: none;
-padding: 10px 0 10px 10px;
+justify-content: center;
+}
+.Portfolio-btn:hover{
+border: 0 0 10px #fdfdfd,
+}
+.Portfolio-btn button{
+    padding: 10px 20px 10px 20px;
 margin: 10px 10px 10px 10px;
+border: 0.2px solid rgb(231, 229, 229);
+color:#777777;
+background-color: rgb(254, 255, 255);
 }
 .img{
     display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 .img img{
-    width: 100%;
+    flex: 1 1 0;
+    max-width: 24%;
     height: 260px;
-    margin: 10px 10px;
-    gap: 20px;
+    object-fit: cover;
+    margin: 15px 15px
+    
 }
 
 /* contact */
@@ -193,11 +342,14 @@ margin: 10px 10px 10px 10px;
    overflow-x: hidden;
    justify-content: space-around
 }
+.info{
+margin: 15px 17px ;
+}
 .Contact-first{
 width: 22vw
 }
 .Contact-first h2{
-padding-bottom: 9px;
+padding-bottom: 5px;
 padding-left: 9px;
 font-size: 32px;
 }
