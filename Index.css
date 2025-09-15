@@ -23,6 +23,60 @@ position: fixed;
 width: 100%;
 
 }
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+#H{
+    background-image: url(images/slider/2.jpg) ;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+gap: 30px;
+padding: 10px;
+padding-top: 200px;
+
+color: white;
+display: block;
+text-align: center;
+
+}
+#H h1{
+    font-size: 3rem;
+   
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#H h2{
+    font-size: 2rem;
+   
+    font-weight: 500;
+     margin-bottom: 30px;
+}
+#H button{
+    padding: 15px 70px;
+    background-color: var(--second-color);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    /* margin-top: 20px; */
+    cursor: pointer;
+    font-weight: 400;
+}
+
+#H button:hover{
+    padding: 15px 70px;
+    background-color: white;
+    color: var(--second-color);
+    border: none;
+    font-size: 1.2rem;
+    /* margin-top: 20px; */
+    cursor: pointer;
+}
 #Service{
     background-image: url(images/divider-bg.jpg);
     background-position: center;
@@ -31,15 +85,18 @@ width: 100%;
     width: 100%;
     height: 90vh;
     color: aliceblue;
-   padding: 100px 120px ;
+   padding: 10px 120px ;
    font-size: 1.1rem;
-    transform: translateY(20px); /* thoda neeche hoga */
-      animation: fadeInUp 4s ease forwards;
-      animation-delay: 4s;  
+    
 }
 #Service h4{
 padding: 15px 0 30px 0;
 font-size: 1.5em;
+}
+
+#Service h2{
+padding: 20px 0;
+
 }
 #Service p{
 line-height: 1.8;
@@ -107,19 +164,21 @@ padding-top: 50px;
 .card-p h2{
    
     padding-bottom: 10px;
+    border-bottom: 2px solid black;
 }
 
 .card-p p{
     padding-top: 10px;
-   border-top: 2px solid black;
+   
 
 }
 #About{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
+    padding: 70px 20px;
     gap: 30px;
+    margin: 250px 0;
 }
 
 .About1 {
@@ -129,6 +188,17 @@ padding-top: 50px;
 .About1 h2 {
    font-size: 40px;
    padding-bottom: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .About1 p {
@@ -163,12 +233,13 @@ progress{
     width: 100%;
     overflow-x: hidden;
 align-content: center;
-padding-left: 26rem;
+text-align: center;
 color: #fdfbfb;}
    .newsletter-h2{
     margin-bottom: 2rem;
     /* align-content: center; */
-    margin-right: 27rem !important;
+   
+    text-align: center;
    } 
    .newsletter-data input{
 margin: 20px 10px;
@@ -176,6 +247,7 @@ padding: 10px 90px 10px 20px;
 background-color: transparent;
 color: white !important;
 border: 1px solid white;
+width: 30%;
    }
    
    .newsletter-data button{
@@ -329,6 +401,7 @@ margin-bottom: 30px;
 display: flex;
 border: none;
 justify-content: center;
+flex-wrap: wrap;
 }
 
 .Portfolio-btn button{
@@ -344,14 +417,15 @@ border: 0 0 10px #fdfdfd,
 .img{
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .img img{
-    flex: 1 1 0;
-    max-width: 24%;
+   
+    width: 24%;
     height: 260px;
-    object-fit: cover;
-    margin: 15px 15px
+    
+    margin: 15px 15px;
     
 }
 
@@ -366,26 +440,26 @@ border: 0 0 10px #fdfdfd,
    width: 100%;
    color: rgb(255, 255, 255);
    display: flex;
-   align-items: center;
-   padding: 0 40px;
+  
+   padding: 120px 70px;
    overflow-x: hidden;
    justify-content: space-around;
-   margin-top: 100px;
+   
 }
 .info{
 margin: 15px 17px ;
 }
 .Contact-first{
-width: 22vw
+width: 80%
 }
 .Contact-first h2{
 padding-bottom: 5px;
-padding-left: 9px;
+
 font-size: 32px;
 }
 .first{
     display: block;
-    
+    width: 50%;
 }
 .first a{
     color: #93CA3A !important;
@@ -396,16 +470,22 @@ font-size: 32px;
 }
 .social-media{
     padding-left: 1rem;
+    justify-content: center;
    
+}
+.second{
+    
+    width: 50%;
 }
 .second h2{
     padding-bottom: 2rem;
-padding-left: 9px;
+
 font-size: 32px;
 }
 .second1{
 display: flex;
 gap: 17px;
+
 }
 .second1 a{
     color: #93CA3A;
@@ -423,24 +503,33 @@ gap: 17px;
 }
 .third{
     display: block;
-    margin: 20px;
+   
+    width: 100%;
 
+}
+.info{
+        margin: 0 20px;
+    width: 100%;
 }
 .data{
     display: flex;
+    gap: 15px;
  
 }
-.data input {
+.input1 {
     
- margin: 0 19px 13px 2px;
+ margin: 10px 10px 10px 0;
  padding: 14px;
  border-radius: 4px ;
  border: transparent;
+ width: 100%;
 }
-.message{
+.input2{
 padding-left: 12px;
 border-radius: 4px ;
  border: transparent;
+ width: 100%;
+ margin: 10px 0 10px 0;
 }
 .info-button{
    width: 100% !important;
@@ -454,6 +543,8 @@ border-radius: 4px ;
  border-radius: 4px ;
  border: transparent;
  margin-right: 21px;
+ width: 100%;
+ 
     
 }
 /* footer */
@@ -461,9 +552,9 @@ footer{
     background-color: rgb(245, 243, 248);
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 10px;
     align-items: center;
-    height: 88px;
+    height: 80px;
 
 }
 .social-media{
@@ -471,13 +562,17 @@ footer{
     align-content: flex-end;
     gap: 45px;
     text-decoration: none;
-   
-    padding-right: 140px;
+    width: 100%;
+   justify-content: center;
+  
 }
 .social-media a{
     color: rgb(20, 20, 20);
     text-decoration: none;
    
+}
+.Copyright{
+    width: 100%;
 }
 .Copyright p{
     padding-bottom: 10px;
@@ -488,6 +583,7 @@ footer{
     font-weight: 110;
     font-size: 1rem;
 }
+
 /* responsive */
 @media(min-width:420px) and (max-width:768px) {
 .list{
@@ -521,26 +617,96 @@ width: 100%;}
     height: auto;
     width: 100%;
 }
+.newsletter input{
+    width: 80%
+}
+.heading{
+text-align: center;
 }
 
-@media (min-width:768x) and (max-width:1024px) {
+  .hamburger {
+    display: block;
+  }
+.Price{
+   flex-direction: column;
+    align-items: center;
+   
+}
+.img img{
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+}
+#Contact{
+    flex-direction: column;
+}
+.first{
+   width: 100%; 
+   margin-bottom: 40px;
+}
+.Contact-first{
+    width: 100%;
+}
+.second{
+    width: 100%;
+}
+.data{
+    flex-direction: column;}
+
+#footer{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+}
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
 .navbar{
     flex-direction: column;}
     #Service{
         padding: 120px 40px;
     }
+    
     #Service p{
 
 width: 100%;}
-
+.img img{
+    width: 43%;
+    height: auto;
+}
+.data{
+    flex-direction: column;
+}
 }
 @media (max-width:420px) {
+   
+
+.homedata1{
+    flex-direction: column;
+}
+
+
+
+    .list{
+    Display: none;
+}
+#Service{
+padding: 100px 60px ;
+    }
+
+        
 #Service p{
 
 width: 100%;}
 #About{
     flex-direction: column;
 
+}
+
+
+.homedata1{
+    flex-direction: column;
 }
 .Team-data{
     flex-direction: column;
@@ -553,5 +719,42 @@ width: 100%;}
 .Team-img{
     height: auto;
     width: 100%;
+}
+.newsletter input{
+    width: 80%
+}
+.Price{
+   flex-direction: column;
+    align-items: center;
+   
+}
+
+.img img{
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+}
+#Contact{
+    flex-direction: column;
+    padding: 40px;
+}
+.first{
+   width: 100%; 
+   margin-bottom: 40px;
+}
+.Contact-first{
+    width: 100%;
+}
+.second{
+    width: 100%;
+}
+.data{
+    flex-direction: column;}
+
+#footer{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+    height: auto;
 }
 }

@@ -15,17 +15,26 @@
       <img src="images/logo.png" alt="no-img" />
     </div>
     <ul class="list">
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#Service">Service</a></li>
+      <li><a href="#H">Home</a></li>
+      <li><a href="#Home">Service</a></li>
       <li><a href="#About">About</a></li>
       <li><a href="#Team">Team</a></li>
       <li><a href="#Pricing">Pricing</a></li>
       <li><a href="#Portfolio">Potfolio</a></li>
       <li><a href="#Contact">Contact</a></li>
     </ul>
-
+<div class="hamburger">
+    ☰
+  </div>
 
   </nav>
+  <section id="H">
+    
+    <h1>Welcome To <span>Solution</span></h1>
+    <h2>WE DESIGN & CODE WEBSITES,Works on IE 10+</h2>
+    <button>OUR WORK</button>
+    
+  </section>
   <section id="Home">
 
     <div class="homedata">
@@ -53,7 +62,7 @@
           <div class="card-link">
           <a><i class="ri-html5-fill"></i></a></div>
           <div class="card-p"> <h2>HTML5 Website</h2>
-          <p>Built with HTML5 for speed, accessibility, and cross-device compatibility</p></div>
+          <p>Built with HTML5  , css  and javascript for speed, accessibility, and cross-device compatibility</p></div>
         </div>
         <div class="card">
          <div class="card-link"> <a><i class="ri-chat-heart-line"></i></a></div>
@@ -77,7 +86,7 @@
        and succeed in the modern world.</p>
   </section>
   <section id="About">
-    <div class="About1">
+    <div class="About1 " >
     <h2> <span>About Solution</span></h2>
     <h3>Smart,Ligh and Adaptive</h3>
     <p>At  Solution, we provide innovative IT services tailored to your business needs. 
@@ -121,7 +130,8 @@
   <p>Managing projects and teams for <br>seamless execution and success.</p></div>
       
     </div>
-    </div><div class="newsletter">
+    </div>
+    <div class="newsletter">
     <h2 class="newsletter-h2">Get our newsletter!</h2>
     <p>Subscribe to our newsletter and stay updated with the latest news and offers!</p>
     <div class="newsletter-data"><input type="text" placeholder="Enter Your Email"/>
@@ -192,10 +202,11 @@
     </div><div class="photo">
     <div class="img"><img src="images/portfolio-img1.jpg"/>
     <img src="images/portfolio-img2.jpg"/>
-    <img src="images/portfolio-img3.jpg"/></div> 
-   <div class="img"> <img src="images/portfolio-img4.jpg"/>
+    <img src="images/portfolio-img3.jpg"/>
+    <img src="images/portfolio-img4.jpg"/>
     <img src="images/portfolio-img5.jpg"/>
-    <img src="images/portfolio-img6.jpg"/></div></div>
+    <img src="images/portfolio-img6.jpg"/></div>
+  </div>
     
   
     
@@ -230,15 +241,15 @@
     
     <form class="info">
 <div class="data">
-      <input class="name" placeholder="Name" type="text" class="input1"/>
-      <input class="mail" placeholder="Mail" type="email" class="input2"/>
+      <input class="input1" placeholder="Name" type="text" class="input1"/>
+      <input class="input2" placeholder="Mail" type="email" class="input2"/>
       </div>
-      <textarea class="message" placeholder="Message" type="text" rows="6" cols="55"></textarea>
+      <textarea class="input2" placeholder="Message" type="text" rows="6" cols="55"></textarea>
      <div class="info-button"> <button >Send</button></div>
     </form>
     </div>
   </section>
-  <!-- <footer id="footer">
+  <footer id="footer">
     <div class="Copyright">
     <p>Copyright © 2024 Solution Company</p>
     <h3>Designed by <span>Nisha</span></h3>
@@ -254,7 +265,16 @@
       
     </div>
 
-  </footer> -->
+  </footer>
+  <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+</script> 
 </body>
 
 </html>
