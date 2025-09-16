@@ -684,6 +684,11 @@ text-align: center;
     display: block;
     cursor: pointer;
 }
+#footer .social-media{
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
 }
 
 @media (min-width:768px) and (max-width:1024px) {
@@ -814,5 +819,10 @@ width: 100%;}
 #Contact{
     
     padding: 40px;
+}
+#footer .social-media{
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
 }
 }
