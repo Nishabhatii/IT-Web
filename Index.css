@@ -589,8 +589,22 @@ footer{
 @media(min-width:420px) and (max-width:768px) {
 .list{
     Display: none;
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    gap: 0;
+    box-shadow: 0 4x 8px rgba(0,0,0,0.5);
+    flex-direction: column;
+    align-items: center;
 }
-
+.list.active{
+    display: flex;
+}
+.navbar{
+    padding: 0 20px;
+}
 .homedata1{
     flex-direction: column;
 }
@@ -610,6 +624,7 @@ width: 100%;}
     flex-direction: column;
     padding: 50px;
 }
+
 .Team-member{
     width: 70%;
     height: auto;
@@ -761,7 +776,25 @@ width: 100%;}
     padding-top: 10px;
     height: auto;
 }
-
+.list{
+    Display: none;
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    gap: 0;
+    box-shadow: 0 4x 8px rgba(0,0,0,0.5);
+    align-items: center;
+     flex-direction: column;
+   
+}
+.list.active{
+    display: flex;
+}
+.navbar{
+    padding: 0 20px;
+}
 .hamburger{
     display: block;
     cursor: pointer;

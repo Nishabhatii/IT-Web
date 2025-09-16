@@ -269,14 +269,14 @@
   </footer>
   <script>
   const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector(".list");
+  const navList = document.querySelector(".list");
 
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+  hamburger.addEventListener("click", function() {
+    navList.classList.toggle("active");
   });
 
-  hamburger.addEventListener("mouseleave", () => {
-    navLinks.classList.remove("active");
+navList.addEventListener("mouseleave", function() {
+    navList.classList.remove("active");
   });
 
 </script> 
