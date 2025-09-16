@@ -14,6 +14,9 @@
     <div class="logo">
       <img src="images/logo.png" alt="no-img" />
     </div>
+    <div class="hamburger">
+    ☰
+  </div>
     <ul class="list">
       <li><a href="#H">Home</a></li>
       <li><a href="#Home">Service</a></li>
@@ -23,9 +26,7 @@
       <li><a href="#Portfolio">Potfolio</a></li>
       <li><a href="#Contact">Contact</a></li>
     </ul>
-<div class="hamburger">
-    ☰
-  </div>
+
 
   </nav>
   <section id="H">
@@ -268,10 +269,14 @@
   </footer>
   <script>
   const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector(".nav-links");
+  const navLinks = document.querySelector(".list");
 
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+  });
+
+  hamburger.addEventListener("mouseleave", () => {
+    navLinks.classList.remove("active");
   });
 
 </script> 
