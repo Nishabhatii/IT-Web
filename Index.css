@@ -49,16 +49,16 @@ text-align: center;
     font-size: 3rem;
    
     font-weight: 600;
-    margin-bottom: 30px;
+    
 }
 #H h2{
-    font-size: 2rem;
+    font-size: 24px;
    
     font-weight: 500;
-     margin-bottom: 30px;
+     margin: 20px 0;
 }
 #H button{
-    padding: 15px 70px;
+    padding: 15px 60px;
     background-color: var(--second-color);
     color: white;
     border: none;
@@ -82,6 +82,7 @@ text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 100px 120px;
     width: 100%;
     height: 90vh;
     color: aliceblue;
@@ -139,8 +140,7 @@ display: block;
 gap: 30px;
 justify-content: center;
 padding: 40px 60px;
-padding-top: 120px;
-margin-bottom: 100px;
+margin: 30px 0;
 
 }
 .homedata1 {
@@ -179,7 +179,7 @@ padding-top: 50px;
     align-items: center;
     padding: 70px 20px;
     gap: 30px;
-    margin: 250px 0;
+    margin: 50px 0;
 }
 
 .About1 {
@@ -437,6 +437,7 @@ border: 0 0 10px #fdfdfd,
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 60px;
    height: 90vh;
    width: 100%;
    color: rgb(255, 255, 255);
@@ -539,12 +540,13 @@ border-radius: 4px ;
 }
 
 .info-button button{
+    background-color: var(--second-color);
+    color: white;
   padding: 15px 40px;
   margin-top: 10px;
  border-radius: 4px ;
  border: transparent;
- margin-right: 21px;
- width: 100%;
+
  
     
 }
@@ -605,6 +607,9 @@ footer{
 .navbar{
     padding: 0 20px;
 }
+.homedata{
+    padding: 40px 20px;
+}
 .homedata1{
     flex-direction: column;
 }
@@ -655,6 +660,7 @@ text-align: center;
 }
 #Contact{
     flex-direction: column;
+    height: auto;
 }
 .first{
    width: 100%; 
@@ -682,9 +688,10 @@ text-align: center;
 
 @media (min-width:768px) and (max-width:1024px) {
 .navbar{
-    flex-direction: column;}
+    flex-direction: column;
+height: auto;}
     #Service{
-        padding: 120px 40px;
+        height: auto;
     }
     
     #Service p{
@@ -697,6 +704,7 @@ width: 100%;}
 .data{
     flex-direction: column;
 }
+
 }
 @media (max-width:420px) {
    
@@ -711,7 +719,8 @@ width: 100%;}
     Display: none;
 }
 #Service{
-padding: 100px 60px ;
+padding:  60px ;
+height: auto;
     }
 
         
@@ -723,7 +732,9 @@ width: 100%;}
 
 }
 
-
+.homedata{
+    padding: 40px 10px;
+}
 .homedata1{
     flex-direction: column;
 }
@@ -732,7 +743,7 @@ width: 100%;}
     padding: 50px;
 }
 .Team-member{
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 .Team-img{
@@ -798,5 +809,10 @@ width: 100%;}
 .hamburger{
     display: block;
     cursor: pointer;
+}
+
+#Contact{
+    
+    padding: 40px;
 }
 }
