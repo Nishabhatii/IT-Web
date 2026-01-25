@@ -6,7 +6,7 @@ This project represents a professional corporate layout suitable for IT services
 ## 🔗 Live Demo
 👉 https://nishabhatii.github.io/IT-Web/
 
-##                ✨ Features
+##          ✨ Features
 - Fully responsive corporate design
 - Clean and professional UI
 - Interactive navigation menu
